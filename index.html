@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Coach Diet Turun Berat Badan</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --arctic: #D3D1CE;
+      --apres-ski: #6C6D74;
+      --slopes: #B3B7BA;
+      --mountainside: #262E36;
+      --midnight: #090F15;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--arctic);
+      color: var(--mountainside);
+    }
+    .navbar {
+      background-color: var(--midnight);
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: var(--arctic) !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: var(--slopes) !important;
+    }
+    .btn-primary {
+      background-color: var(--midnight);
+      border: none;
+      color: var(--arctic);
+      transition: background .2s, transform .2s;
+    }
+    .btn-primary:hover {
+      background-color: var(--slopes);
+      color: var(--midnight);
+      transform: translateY(-2px);
+    }
+    .social-btn {
+      transition: transform .2s, box-shadow .2s;
+      background-color: var(--midnight);
+      color: var(--arctic);
+      border-radius:50%;
+      width:40px;height:40px;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .social-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      background-color: var(--apres-ski);
+    }
+    .banner {
+      background: url('banner.jpg') center/cover no-repeat;
+      min-height: 80vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .banner .overlay {
+      position: absolute; top:0;left:0;width:100%;height:100%;
+      background: url('asset/monochrome_low_poly_design_0209.jpg') center/cover no-repeat;
+      z-index:1;
+    }
+    .banner .content {
+      position: relative; z-index:2;
+      color: #fff;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .testimonial-card {
+      background-color: var(--arctic);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .testimonial-card img {
+      /* border-radius:50%; */
+      width:300px; height:350px;
+      object-fit: contain;
+      margin-bottom:15px;
+    }
+    #testimonialCarousel .carousel-control-prev-icon,
+    #testimonialCarousel .carousel-control-next-icon {
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      width:40px; height:40px;
+    }
+    .coach-profile {
+      background-color: var(--slopes);
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .coach-profile img {
+      border-radius: 10%;
+      width:200px; height:250px; object-fit:cover;
+      margin-bottom:15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      background-color: var(--midnight);
+      color: var(--arctic);
+      padding: 20px 0;
+    }
+    footer a {
+      color: var(--arctic);
+    }
+    footer a:hover {
+      color: var(--slopes);
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Coach Diet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+            <li class="nav-item"><a class="nav-link" href="#coach">Coach</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Banner -->
+  <section class="banner">
+    <div class="overlay"></div>
+    <div class="content">
+        <h1 class=" text-uppercase mb-3">Program membentuk tubuh ideal dalam 10 hari</h1>
+      <h2>Take care of your body.</h2>
+      <p class="lead">It's the only place you have to live in</p>
+      <a href="#coach" class="btn btn-primary btn-lg mt-3">Mulai Sekarang? Hubungi Coach!</a>
+    </div>
+  </section>
+  <!-- Program Section -->
+  <section id="program" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Kenapa Program Ini Cocok Untuk Anda?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow p-3">
+            <i class="fas fa-utensils fa-2x mb-3"></i>
+            <h5>Rencana Diet Personal</h5>
+            <p>Menu sehat yang dirancang khusus sesuai kebutuhan kalori Anda.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow p-3">
+            <i class="fas fa-dumbbell fa-2x mb-3"></i>
+            <h5>Latihan Efektif</h5>
+            <p>Program latihan yang mudah diikuti, baik di rumah maupun gym.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow p-3">
+            <i class="fas fa-users fa-2x mb-3"></i>
+            <h5>Dukungan Komunitas</h5>
+            <p>Support grup yang memotivasi dan membantu Anda tetap konsisten.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Testimoni -->
+<section id="testimoni" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Apa Kata Mereka?</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+  
+          <div class="carousel-item active">
+            <div class="testimonial-card mx-auto" style="max-width:400px;">
+              <img src="asset/tesstimoni 1.jpeg" alt="User Testimoni 1" class="img-fluid rounded mb-3">
+              <!-- <p class="fst-italic">"Saya berhasil turun 4 kg dalam 10 hari! Terima kasih Coach!"</p>
+              <h5 class="fw-bold">– Maria, 32 Tahun</h5> -->
+            </div>
+          </div>
+  
+          <!-- Tambah lagi jika perlu -->
+          <!-- <div class="carousel-item">
+            <div class="testimonial-card mx-auto" style="max-width:400px;">
+              <img src="asset/tesstimoni 2.jpeg" alt="User Testimoni 2" class="img-fluid rounded mb-3">
+              <p class="fst-italic">"Programnya mudah diikuti dan hasilnya nyata."</p>
+              <h5 class="fw-bold">– Andi, 28 Tahun</h5>
+            </div>
+          </div> -->
+  
+        </div>
+  
+        <!-- Navigasi Carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Coach Profile -->
+  <section id="coach" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Kenalan dengan Coach</h2>
+      <div class="coach-profile mx-auto" style="max-width:350px;">
+        <img src="asset/coach.jpeg" alt="Foto Coach">
+        <h4>Coach Dewi</h4>
+        <p>Ahli Nutrisi dan Coach Profesional.</p>
+        <a class="btn btn-success btn-sm mb-3" href="https://wa.link/gw4pxd">Chat WhatsApp</a>
+        <div class="d-flex justify-content-center">
+          <a class="social-btn me-2" href="https://www.instagram.com/coach_dewip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+          <a class="social-btn me-2" href="https://www.tiktok.com/@dewipurni24"><i class="fab fa-tiktok"></i></a>
+          <a class="social-btn" href="https://www.facebook.com/share/1B3a2pCtV2/"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="d-flex justify-content-center mb-3">
+        <a class="social-btn me-2" href="https://www.instagram.com/coach_dewip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        <a class="social-btn me-2" href="https://www.tiktok.com/@dewipurni24"><i class="fab fa-tiktok"></i></a>
+        <a class="social-btn" href="https://www.facebook.com/share/1B3a2pCtV2/"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <p class="text-center mb-0">&copy; 2025 Coach Dewi. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
