@@ -23,9 +23,11 @@
       background-color: var(--arctic);
       color: var(--mountainside);
     }
-    .navbar {
-      background-color: var(--midnight);
-    }
+.navbar {
+  background-color: var(--midnight) !important;
+  z-index: 1055;
+}
+
     .navbar-brand, .navbar-nav .nav-link {
       color: var(--arctic) !important;
     }
@@ -127,7 +129,7 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top shadow" style="background-color: var(--midnight); z-index: 1055;">
       <div class="container">
         <a class="navbar-brand" href="#">Coach Diet</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
